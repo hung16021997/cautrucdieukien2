@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt("nhập a"));
+    let b = Number(prompt("nhập b"));
+    let c = Number(prompt("nhập c"));
+    let denta = Math.pow(b, 2) - 4 * a * c;
+    let x1, x2;
+    function phuongtrinhbac2() {
+        if (denta < 0) {
+            document.write("phương trình vô nhiệm");
+        } else if (denta == 0) {
+            x1 = x2 = -b / 2 * a;
+            console.log("x1=x2= " + x1);
+        } else if (denta > 0) {
+            x1 = (-b + Math.sqrt(denta)) / 2 * a;
+            x2 = (-b - Math.sqrt(denta)) / 2 * a;
+            document.write("x1= " + Math.round(x1));
+            document.write("x2= " + Math.round(x2));
+        }
+    }
+    </script>
+
+</body>
+</html>
